@@ -1,5 +1,5 @@
-# aws-cli-ec2-inventory
-List EC2 in multiple regions and accounts 
+# AWS CLI EC2 Inventory
+Export metadata of instances (id, Private IP, Public IP, AMI and Tag Name) of multiple regions and accounts to csv
 
 ```
 for profile in $(awk -F"[" '{gsub(/\].*/,"",$2);print $2}' ~/.aws/credentials); do  
